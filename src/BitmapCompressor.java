@@ -23,7 +23,7 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  *  @author Zach Blick
- *  @author YOUR NAME HERE
+ *  @author Damian Villarreal-Ayala
  */
 public class BitmapCompressor {
 
@@ -31,9 +31,19 @@ public class BitmapCompressor {
      * Reads a sequence of bits from standard input, compresses them,
      * and writes the results to standard output.
      */
+    //beginning of bitmap compressor
+    //goal of th e
+
+    /**
+     * current_digit = what is being read in; then move FileReader back to original loc.
+     *
+     * while the current index is 0
+     *
+     */
     public static void compress() {
 
         // TODO: complete compress()
+
 
         BinaryStdOut.close();
     }

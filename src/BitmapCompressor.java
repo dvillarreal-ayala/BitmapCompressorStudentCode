@@ -43,6 +43,19 @@ public class BitmapCompressor {
     public static void compress() {
 
         // TODO: complete compress()
+        String input = BinaryStdIn.readString();
+        int inputLength = input.length();
+        char charizard = input.charAt(0);
+        int numSequencesRepetition = 0;
+
+        for (int i = 0; i < inputLength; i++)
+        {
+            //
+            if(input.charAt(i) != charizard)
+            {
+//                numSequencesRepetition++;
+            }
+        }
 
 
         BinaryStdOut.close();

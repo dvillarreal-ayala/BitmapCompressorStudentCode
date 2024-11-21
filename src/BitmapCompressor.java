@@ -16,6 +16,8 @@
  *  1240 bits
  ******************************************************************************/
 
+import java.util.NoSuchElementException;
+
 /**
  *  The {@code BitmapCompressor} class provides static methods for compressing
  *  and expanding a binary bitmap input.
@@ -31,8 +33,6 @@ public class BitmapCompressor {
      * Reads a sequence of bits from standard input, compresses them,
      * and writes the results to standard output.
      */
-    //beginning of bitmap compressor
-    //goal of th e
 
     /**
      * current_digit = what is being read in; then move FileReader back to original loc.
@@ -43,20 +43,25 @@ public class BitmapCompressor {
     public static void compress() {
 
         // TODO: complete compress()
-        String input = BinaryStdIn.readString();
-        int inputLength = input.length();
-        char charizard = input.charAt(0);
+        // When reading in the bits, use readInt using 1 as r so that we can only care about
+        // the first bit being either 1 or 0.
+        int bit = BinaryStdIn.readInt(1);
         int numSequencesRepetition = 0;
 
-        for (int i = 0; i < inputLength; i++)
+        // While the file isn't empty, continue to read and compress
+        while(!BinaryStdIn.isEmpty())
         {
-            //
-            if(input.charAt(i) != charizard)
+            //Continue adding code to this section
+            if(bit == 0)
             {
-//                numSequencesRepetition++;
+                // do smth
+            }
+            //Given that we're using a bitmap, I know all the values are always going to be 0 or 1.
+            else
+            {
+                // do smth else
             }
         }
-
 
         BinaryStdOut.close();
     }
